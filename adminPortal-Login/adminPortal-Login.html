@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminPortal.css">
+    <title>Admin Portal</title>
+</head>
+<body>
+    <div class="background-image-container">
+        <img class="background-image" src="P1010350.jpg" title="background_image">
+    </div>
+    <div class="login-container">
+        <h1>Administrator Portal</h1>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" required placeholder="Username">
+            <input type="password" id="password" name="password" required placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <p id="loggedInMessage"></p>
+    </div>
+    <script type="module" src="./router.js"></script>
+    <script type="module">
+        import { initLogin } from "./adminPortal-Login.js";
+        document.addEventListener("DOMContentLoaded", function () {
+            initLogin();
+        });
+    </script>
+</body>
+</html>

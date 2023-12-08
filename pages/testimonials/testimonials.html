@@ -1,0 +1,37 @@
+<div class="template">
+    <h2 style="text-align: center;"><strong>Testimonials Editor</strong></h2>
+    <br>
+
+    <div style="display: flex; justify-content: space-between;">
+        <div style="border: 1px solid black; border-radius: 4px; padding: 10px; max-width: 450px;" id="addTestimonial">
+            <h4 style="text-align: center; margin-bottom: 15px;">Add New Testimonial</h4>
+            <div class="m-2">
+                <label style="width: 85px; display: inline-block;">Name:</label>
+                <input style="width: calc(100% - 100px); display: inline-block; margin-left: 10px; padding: 5px; border-radius: 3px; border: 1px solid #ccc;" id="submissionName" placeholder="Name.." required>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="text" style="display: block;">Text:</label>
+                <textarea id="text" style="resize: vertical; width: calc(100% - 20px); padding: 5px; border-radius: 3px; border: 1px solid #ccc; height: 150px;"></textarea>
+            </div>
+            <div class="mt-4" style="width: 100%;">
+                <button class="btn btn-primary" style="width: 100%;" id="submitButton">Submit</button>
+            </div>
+        </div>
+
+        <div style="flex-grow: 1;">
+            <table class="table table-light">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Text</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tablerows">
+                </tbody>
+            </table>
+            <p id="error" style="color:red"></p>
+        </div>
+    </div>
+</div>

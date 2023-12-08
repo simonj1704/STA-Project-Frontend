@@ -1,0 +1,69 @@
+<div class="template">
+    <h2 style="text-align: center;"><strong>Course Editor</strong></h2>
+    <br>
+
+    <div style="display: flex; justify-content: space-between;">
+        <div style="border: 1px solid black; border-radius: 4px; padding: 10px; max-width: 300px;" id="addCourse">
+            <h4 style="text-align: center; margin-bottom: 15px;">Add New Course</h4>
+            <div class="m-2">
+                <label style="width: 85px; display: inline-block;">Title:</label>
+                <input
+                    style="width: calc(100% - 100px); display: inline-block; margin-left: 10px; padding: 5px; border-radius: 3px; border: 1px solid #ccc;"
+                    id="title" placeholder="Title..">
+            </div>
+            <div class="m-2">
+                <label style="width: 85px; display: inline-block;">Start Date:</label>
+                <input
+                    style="width: calc(100% - 100px); display: inline-block; margin-left: 10px; padding: 5px; border-radius: 3px; border: 1px solid #ccc;"
+                    id="start-date" type="datetime-local">
+            </div>
+            <div class="m-2">
+                <label style="width: 85px; display: inline-block;">Page Link</label>
+                <select
+                    style="width: calc(100% - 100px); display: inline-block; margin-left: 10px; padding: 5px; border-radius: 3px; border: 1px solid #ccc;"
+                    id="pageLink" placeholder="Link to page">
+                    <option value="" disabled selected>Select course type</option>
+                    <option value="LPC">LPC</option>
+                    <option value="sfitri">SFI/TRI</option>
+                    <option value="a320">Typerating A320</option>
+                    <option value="b737">Typerating B737</option>
+                    <option value="b777">Typerating B777</option>
+                    <option value="b787">Typerating B787</option>
+                    </select>
+            </div>
+            <div class="m-2">
+                <label style="width: 85px; display: inline-block;">Venue/s</label>
+                <input
+                    style="width: calc(100% - 100px); display: inline-block; margin-left: 10px; padding: 5px; border-radius: 3px; border: 1px solid #ccc;"
+                    id="venue" placeholder="Add venue/s here">
+            </div>
+            <div class="mt-4" style="width: 100%;">
+                <button class="btn btn-primary" style="width: 100%;" id="submitButton">Submit</button>
+            </div>
+        </div>
+
+
+
+        <table class="table table-light">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Start Date</th>
+                    <th>Venue</th>
+                    <th>Page Link</th>
+
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
