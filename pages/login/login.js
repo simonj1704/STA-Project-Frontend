@@ -1,3 +1,5 @@
+import { API_URL } from "../../settings.js";
+
 let isLoggedIn = false;
 
 export function initLogin() {
@@ -14,7 +16,7 @@ async function performLogin() {
   let errorMessage = document.getElementById("error-message");
 
   try {
-    const response = await fetch("http://localhost:8080/api/auth/adminPortal-login", {
+    const response = await fetch(API_URL + "/auth/adminPortal-login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
